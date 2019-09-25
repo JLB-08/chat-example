@@ -1,6 +1,7 @@
 const express = require('express');
-const app = express();
-const http = require('http').Server(app);
+var app = require('express')();
+var http = require('http').createServer(app);
+var port = process.env.PORT || 3000;
 const io = require('socket.io')(http);
 const path = require('path');
 var userCount = 0;
@@ -90,6 +91,11 @@ io.on('connection', function (socket) {
 
 
 
-http.listen(8081, function(){
-	console.log('listening on port 8081');
+app.get('/', function(req, res){
+    res.sendFile(__dirname + '/index.html');
+  });
+
+http.listen(port, function(){
+  console.log('listening on *: '+ port);
 });
+
