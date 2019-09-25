@@ -188,9 +188,6 @@ button {
 /* FOR THE CARDS */
 
 #card {
-
-	height: 70%;
-	flex-direction: column;
 	text-overflow: ellipsis;
 	white-space: initial;
 	word-wrap: break-word;
@@ -198,9 +195,9 @@ button {
 	overflow-y: scroll;
 	transition:0.5s;
 	color: black;
-	width: 25rem;
-	left: 0;
-	margin-left:15%
+	width: 50%;
+	height: 24px;
+	margin-left:0%;
 }
 
 #card:hover {
@@ -302,18 +299,19 @@ button {
 	background-color:blue;
 	opacity: 0.5;
 	height: 100%;
+	width: 100%;
 	margin: 25px 0;
 	padding: 25px 25px;
 	color: white;
 	overflow-y: scroll;
-	border-radius: 20px;
+	/* border-radius: 20px; */
 	flex-direction: column;
 	text-overflow: ellipsis;
 	white-space: initial;
 	word-wrap: break-word;
 	overflow: hidden;
 	overflow-y: scroll;
-	margin-top:10%;
+	margin-top:80%;
 }
 
 .footer {
